@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+header {
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 60px;
+    margin-left: 300px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 250px;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+    overflow: hidden; /* Asegura que las burbujas no se desborden */
+}
+
+.btn-ordenar{
+    margin-bottom: 9px;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    color: #000;
+    background-color: #FFC72C;
+    border: none;
+  
+
+}
+
+.bubbles {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: visible; /* Permite que las burbujas se expandan fuera del contenedor */
+}
+
+.bubble {
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: #FFC72C;
+    animation: bubble-rise 2s ease-out infinite;
+    opacity: 60%;
+}
+
+@keyframes bubble-rise {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(0.5);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-100px) scale(1);
+    }
+}
+
+
+.slider-container{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider{
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide{
+    min-width: 100%;
+    transition: transform 1s ease-in-out, width 1s ease-in-out;
+}
+
+.dot-container{
+    z-index: 5;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1.Sem;
+    text-align: center;
+    background-color: rgb(0,0,0,0.3);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.dot{
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.active-dot{
+    background-color: #FFF;
+}
+
+.promocion{
+    width: 40000px;
+    margin-right: 0px;
+    margin-left: 300px;
+    
+}
+
+.cafe{
+    width: 1294px;
+}
+
+.chat{
+    display: flex;
+    float: left;
+    margin-right: 100px;
+    margin-left: 300px;
+    
+    
+}
+
+.programar{
+    display: flex;
+    float: right;
+    margin-right: 260px;
+    margin-left: 0px;
+    
+    
+}
+
+
+.mesoamerica{
+    color: #000;
+    
+}
+
+.mesoamerica:hover{
+    color:darkmagenta;
+
+}
+
+.orgullo{
+    display: flex;
+    float: right;
+    margin-right: 650px;
+}
+
+.derechos{
+    margin-left: 300px;
+}
+
+.meso{
+    margin-left: 300px;
+}
+
+.redes{
+    margin-right: 250px;
+}
+
+.media{
+    display:flex;
+    height: 60px;
+    width: 60px;
+    float: right;
+    margin-bottom: 50px;
+   
+    overflow: hidden;
+    background:#FFF;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgb(0,0,0,0.1);
+    transition: all0.3s ease-out;
+}
+
+.media .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    box-sizing: 60px;
+    transition: all 0.3s ease-out;
+
+}
+
+.media:nth-child(1):hover .icon{
+    background: #4267B2;
+}
+
+.media:nth-child(2):hover .icon{
+    background: #1DA1F2;
+}
+
+.media:nth-child(3):hover .icon{
+    background: #E1306C;
+}
+
+.media:nth-child(4):hover .icon{
+    background: #CA2929;
+}
+
+.media:nth-child(5):hover .icon{
+    background: #FF0000;
+}
+
+.media .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.media:hover .icon i{
+    color: #FFF;
+}
+
